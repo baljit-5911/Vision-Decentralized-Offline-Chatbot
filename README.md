@@ -12,8 +12,7 @@ Main feature is we havent used vision LLM but used multiple models which have al
 Used thresholding to guide and manage multiple Models
 
 ## Multi-Model Architecture
-
-
+![chatbot](https://github.com/jot-s-bindra/Vision-Decentralized-Offline-Chatbot/assets/112833146/0949de87-c217-4c4a-a8f2-c4be82a3c621)
 ## Features
 
 - **Offline Chatbot**: Utilizes the RAG model for conversational AI.
