@@ -15,7 +15,7 @@ Used thresholding to guide and manage multiple Models
 ![chatbot](https://github.com/jot-s-bindra/Vision-Decentralized-Offline-Chatbot/assets/112833146/19271f00-8d8a-437f-b967-9ebc02b83625)
 ## Features
 
-- **Offline Chatbot**: Utilizes the RAG model for conversational AI.
+- **Offline Chatbot**: Utilizes the RAG architecture for conversational AI.
 - **Blockchain Data Storage**: Ensures decentralized and secure data handling.
 - **Vision Integration**: Accepts images as prompts for interactions.Used MultiModel approach to include images as well in the prompt
 - **Fine-Tuning**: Its easier to fine tune as you can fine tune or apply the vgg model only for your suitable task which is a lot easier and computationally inexpensive than fine tuning LLM.
