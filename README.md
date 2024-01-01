@@ -80,6 +80,3 @@ Contributions are welcome! If you want to contribute to this project, follow the
 4. Push the changes to your branch (`git push origin feature/improvement`).
 5. Create a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
