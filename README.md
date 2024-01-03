@@ -5,7 +5,7 @@
 
 ## Overview
 
-This project hosts a fully offline multiModel -chatbot built on the Retrieval-Augmented Generation (RAG) model that even runs on CPU. It incorporates blockchain technology for decentralized data storage, enabling secure and private interactions. The bot is designed to accept text prompts and images, utilizing a multimodal architecture to enhance language understanding.
+This project hosts a fully offline multiModel -chatbot built on the Retrieval-Augmented Generation (RAG) model that even runs on CPU. It incorporates IPFS (pinata) technology for decentralized data storage, enabling secure and private interactions. The bot is designed to accept text prompts and images, utilizing a multimodal architecture to enhance language understanding.
 
 Main feature is we havent used vision LLM but used multiple models which have allowed us to do this image task with text llm too,Multimodel architecture is shown in the photo given below.
 
@@ -70,7 +70,49 @@ After downloading the necessary models:
 ```bash
 streamlit run app.py
 ```
+## Decentralizing file for chatbot training
 
+You need to install the IPFS software on your machine. Here's how you can do it:
+
+Step 1: Install IPFS
+
+You can install IPFS using various methods depending on your operating system.
+
+For instance, on Ubuntu, you can install IPFS using the package manager:
+
+```sudo apt-get install curl
+curl -sSL https://dist.ipfs.io/go-ipfs/v0.10.0/go-ipfs_v0.10.0_linux-amd64.tar.gz | sudo tar -xz -C /usr/local/bin ipfs
+```
+On macOS, you can use Homebrew:
+
+```brew install ipfs```
+For Windows, you can download the prebuilt binaries from the IPFS distributions .
+
+Step 2: Initialize IPFS
+
+Once IPFS is installed, you need to initialize it. This creates a new IPFS repository in your home directory:
+
+```ipfs init```
+Step 3: Start the IPFS Daemon
+
+Now you can start the IPFS daemon:
+
+```ipfs daemon```
+This starts the IPFS daemon, which is a background process that handles adding and retrieving files from the IPFS network 1.
+
+Note: The IPFS daemon must be running in order to add files to IPFS or retrieve files from it. If you stop the daemon, you'll need to restart it before you can perform these actions again.
+
+ after the following run in new terminal 
+ ```ipfs pin add FILE```
+ the FILE that you want to add should be saved in the home directory
+ after the following command you would get a CID or if you already have a CID 
+ then you have to update the  `data` folder's file j.bat in windows :
+ in your file  ```ipfs get <CID> ```
+ then in cli get to the data folder in current directory  ```.\commands.bat```
+ you have retrieved the required file successfully through the ipfs distributed p2p network.
+ 
+ or else we can use pinning services like pinata here to pin our files.
+ note:- in order to get your data decentralised you must copy the new.pdf file in your home directory and delete the file in data folder 
 ## Contributing
 
 Contributions are welcome! If you want to contribute to this project, follow these steps:
