@@ -118,7 +118,7 @@ Note: The IPFS daemon must be running in order to add files to IPFS or retrieve 
  or else we can use pinning services like pinata here to pin our files.
  note:- in order to get your data decentralised you must copy the new.pdf file in your home directory and delete the file in data folder 
  ## IPFS WORKING 
-![IPFS](https://github.com/archief2910/Vision-Decentralized-Offline-Chatbot/blob/master/ipfs_chunker_4.png)
+![ipfs_chunker_4](https://github.com/jot-s-bindra/Vision-Decentralized-Offline-Chatbot/assets/112833146/1ac17f75-4db2-41cf-8ebd-5343650c5a66)
 visual representation of how IPFS (InterPlanetary File System) handles chunking and deduplication of data. Here's a breakdown of the components shown in the image:
 
 1. **Data Blocks**: These represent individual pieces of data that are broken down into smaller chunks. Each chunk is assigned a unique identifier or hash, which is used to reference it later.
