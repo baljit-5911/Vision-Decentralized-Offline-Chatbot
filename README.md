@@ -125,6 +125,7 @@ cd $IPFS_PATH
 ~/.ipfs_tutorial  tree
 
 .
+.
 ├── blocks
 │   ├── 6Y
 │   │   └── CIQA4XCGRCRTCCHV7XSGAZPZJOAOHLPOI6IQR3H6YQ.data
@@ -140,13 +141,14 @@ cd $IPFS_PATH
 ├── datastore_spec
 ├── keystore
 └── version
+
 From a very high-level point of view:
 
-blocks — IPFS stores all the chunked data here, although the go-ipfs flexible interfaces allow you to swap the storage implementation for a different database
+blocks — IPFS stores all the chunked data here, although the go-ipfs flexible interfaces allow you to swap the storage implementation for a different database.
 
-config — Node’s settings (file-system, identity, specs, networking)
+config — Node’s settings (file-system, identity, specs, networking).
 
-datastore — Indexing and other logic
+datastore — Indexing and other logic.
 ## Contributing
 
 Contributions are welcome! If you want to contribute to this project, follow these steps:
