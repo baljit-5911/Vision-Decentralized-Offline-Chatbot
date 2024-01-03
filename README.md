@@ -124,31 +124,29 @@ export IPFS_PATH=/home/web3coach/.ipfs_tutorial
 cd $IPFS_PATH
 ~/.ipfs_tutorial  tree
 
-.
-.
-├── blocks
-│   ├── 6Y
-│   │   └── CIQA4XCGRCRTCCHV7XSGAZPZJOAOHLPOI6IQR3H6YQ.data
-├── config
-├── datastore
-│   ├── 000002.ldb
-│   ├── 000003.log
-│   ├── CURRENT
-│   ├── CURRENT.bak
-│   ├── LOCK
-│   ├── LOG
-│   └── MANIFEST-000004
-├── datastore_spec
-├── keystore
-└── version
+-├── blocks
+-│   ├── 6Y
+-│   │   └── CIQA4XCGRCRTCCHV7XSGAZPZJOAOHLPOI6IQR3H6YQ.data
+-├── config
+-├── datastore
+-│   ├── 000002.ldb
+-│   ├── 000003.log
+-│   ├── CURRENT
+-│   ├── CURRENT.bak
+-│   ├── LOCK
+-│   ├── LOG
+-│   └── MANIFEST-000004
+-├── datastore_spec
+-├── keystore
+-└── version
 
-From a very high-level point of view:
+-From a very high-level point of view:
 
-blocks — IPFS stores all the chunked data here, although the go-ipfs flexible interfaces allow you to swap the storage implementation for a different database.
+-blocks — IPFS stores all the chunked data here, although the go-ipfs flexible interfaces allow you to swap the storage implementation for a different database.
 
-config — Node’s settings (file-system, identity, specs, networking).
+-config — Node’s settings (file-system, identity, specs, networking).
 
-datastore — Indexing and other logic.
+-datastore — Indexing and other logic.
 ## Contributing
 
 Contributions are welcome! If you want to contribute to this project, follow these steps:
