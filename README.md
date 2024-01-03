@@ -117,6 +117,36 @@ Note: The IPFS daemon must be running in order to add files to IPFS or retrieve 
  
  or else we can use pinning services like pinata here to pin our files.
  note:- in order to get your data decentralised you must copy the new.pdf file in your home directory and delete the file in data folder 
+ ## IPFS WORKING 
+ when you initialized your IPFS node with the ipfs init command, you generated the following directory:
+
+export IPFS_PATH=/home/web3coach/.ipfs_tutorial
+cd $IPFS_PATH
+~/.ipfs_tutorial  tree
+
+.
+├── blocks
+│   ├── 6Y
+│   │   └── CIQA4XCGRCRTCCHV7XSGAZPZJOAOHLPOI6IQR3H6YQ.data
+├── config
+├── datastore
+│   ├── 000002.ldb
+│   ├── 000003.log
+│   ├── CURRENT
+│   ├── CURRENT.bak
+│   ├── LOCK
+│   ├── LOG
+│   └── MANIFEST-000004
+├── datastore_spec
+├── keystore
+└── version
+From a very high-level point of view:
+
+blocks — IPFS stores all the chunked data here, although the go-ipfs flexible interfaces allow you to swap the storage implementation for a different database
+
+config — Node’s settings (file-system, identity, specs, networking)
+
+datastore — Indexing and other logic
 ## Contributing
 
 Contributions are welcome! If you want to contribute to this project, follow these steps:
