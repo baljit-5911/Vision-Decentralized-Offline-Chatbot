@@ -105,10 +105,14 @@ Note: The IPFS daemon must be running in order to add files to IPFS or retrieve 
  after the following run in new terminal 
  ```ipfs pin add FILE```
  the FILE that you want to add should be saved in the home directory
+ 
  after the following command you would get a CID or if you already have a CID 
+ 
  then you have to update the  `data` folder's file j.bat in windows :
  in your file  ```ipfs get <CID> ```
+ 
  then in cli get to the data folder in current directory  ```.\commands.bat```
+ 
  you have retrieved the required file successfully through the ipfs distributed p2p network.
  
  or else we can use pinning services like pinata here to pin our files.
