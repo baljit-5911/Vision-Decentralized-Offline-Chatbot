@@ -119,6 +119,19 @@ Note: The IPFS daemon must be running in order to add files to IPFS or retrieve 
  note:- in order to get your data decentralised you must copy the new.pdf file in your home directory and delete the file in data folder 
  ## IPFS WORKING 
 ![IPFS](https://github.com/archief2910/Vision-Decentralized-Offline-Chatbot/blob/master/ipfs_chunker_4.png)
+visual representation of how IPFS (InterPlanetary File System) handles chunking and deduplication of data. Here's a breakdown of the components shown in the image:
+
+1. **Data Blocks**: These represent individual pieces of data that are broken down into smaller chunks. Each chunk is assigned a unique identifier or hash, which is used to reference it later.
+
+2. **Chunking**: This is the process of breaking down data into smaller pieces, or chunks. In the context of IPFS, data is divided into fixed-size blocks, each of which is hashed and added to the IPFS network.
+
+3. **Deduplication**: This is a process where IPFS checks if a piece of data already exists in the network before adding it. If a data block with the same hash already exists, IPFS reuses it instead of creating a new copy. This helps to save storage space and reduce redundancy.
+
+4. **Block Exchange Protocol (BEP)**: This is a protocol used by IPFS for exchanging data blocks between nodes. When a node requests a data block, it contacts other nodes that have the block and negotiates a deal to exchange the block.
+
+5. **Pinning**: Pinning is the process of telling an IPFS node to keep a certain file or data block around indefinitely. This ensures that the data remains available even if other nodes in the network go offline.
+
+Overall, this image illustrates the core principles of how IPFS works: chunking data into blocks, deduplicating data to save storage space, and using a peer-to-peer network to exchange data blocks efficiently 
 ## Contributing
 
 Contributions are welcome! If you want to contribute to this project, follow these steps:
