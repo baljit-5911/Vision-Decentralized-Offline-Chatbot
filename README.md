@@ -118,7 +118,7 @@ Note: The IPFS daemon must be running in order to add files to IPFS or retrieve 
  or else we can use pinning services like pinata here to pin our files.
  note:- in order to get your data decentralised you must copy the new.pdf file in your home directory and delete the file in data folder 
  ## IPFS WORKING 
-
+(https://github.com/archief2910/Vision-Decentralized-Offline-Chatbot/blob/master/ipfs_chunker_4.png)
 ## Contributing
 
 Contributions are welcome! If you want to contribute to this project, follow these steps:
