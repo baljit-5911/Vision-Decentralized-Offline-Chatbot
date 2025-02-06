@@ -132,6 +132,9 @@ visual representation of how IPFS (InterPlanetary File System) handles chunking 
 5. **Pinning**: Pinning is the process of telling an IPFS node to keep a certain file or data block around indefinitely. This ensures that the data remains available even if other nodes in the network go offline.
 
 Overall, this image illustrates the core principles of how IPFS works: chunking data into blocks, deduplicating data to save storage space, and using a peer-to-peer network to exchange data blocks efficiently 
+
+![workflow](./workflow.jpg)
+
 ## Contributing
 
 Contributions are welcome! If you want to contribute to this project, follow these steps:
